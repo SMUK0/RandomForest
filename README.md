@@ -21,6 +21,8 @@ python .\ml\predict_slots.py --db_url "postgresql://postgres:@localhost:5432/con
 
 BASE DE DATOS
 
+```powershell
+
 CREATE TABLE auth_group (
     id SERIAL PRIMARY KEY,
     name VARCHAR NOT NULL
@@ -281,6 +283,7 @@ CREATE TABLE usuarios (
     contrasena VARCHAR NOT NULL,
     id_rol INTEGER NOT NULL
 );
+```
 
 
 
@@ -289,6 +292,7 @@ CREATE TABLE usuarios (
 
 
 INSERTS PARA HACER EL RF
+```powershell
 -- Insertar paciente 1
 INSERT INTO pacientes (id_paciente, nombre, apellido, direccion, fecha_nacimiento, edad, trastorno_salud_mental, fecha_registro, prioridad_clinica, id_psicologo, id_usuario, email, numero_celular)
 VALUES 
@@ -318,3 +322,5 @@ VALUES
 INSERT INTO pacientes (id_paciente, nombre, apellido, direccion, fecha_nacimiento, edad, trastorno_salud_mental, fecha_registro, prioridad_clinica, id_psicologo, id_usuario, email, numero_celular)
 VALUES 
 (106, 'juancito', 'perez', 'calle 1', '1995-06-15', 25, 'Ansiedad generalizada', '2025-12-01', 'baja', 1, 1, 'juancito@email.com', '9876543260');
+
+```
