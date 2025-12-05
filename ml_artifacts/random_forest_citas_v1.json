@@ -1,0 +1,35 @@
+{
+  "metrics": {
+    "best_cv_auc": 0.6930035658298019,
+    "test_auc": 0.6788788775387251,
+    "test_accuracy": 0.687,
+    "oob_score": 0.69275,
+    "n_train": 4000,
+    "n_test": 1000,
+    "best_params": {
+      "min_samples_split": 4,
+      "min_samples_leaf": 8,
+      "max_features": "sqrt",
+      "max_depth": 8
+    }
+  },
+  "features": [
+    "dia_semana",
+    "hora",
+    "prioridad_numeric",
+    "edad",
+    "dias_desde_ultima_sesion",
+    "match_disponibilidad",
+    "ocupacion_slot_psico",
+    "paciente_prefiere_tarde"
+  ],
+  "version": "v1",
+  "trained_at": "2025-11-04T08:18:08.818408",
+  "sklearn_version": "unknown",
+  "best_params": {
+    "min_samples_split": 4,
+    "min_samples_leaf": 8,
+    "max_features": "sqrt",
+    "max_depth": 8
+  }
+}
